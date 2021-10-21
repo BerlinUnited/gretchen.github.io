@@ -6,7 +6,7 @@ General information about Gretchen:
 
 - Gretchen Page on the BerlinUnited website (in German): [https://berlin-united.org/project-gretchen.html](https://berlin-united.org/project-gretchen.html)
 
-- Gretchen documentation TBD: [gretchen.github.io](gretchen.github.io)
+- Gretchen documentation TBD: []()
 
 - Initial assembly Documentation by Matthias Kubisch: [https://github.com/aibrainag/Gretchen/blob/master/documentation/documentation.adoc](https://github.com/aibrainag/Gretchen/blob/master/documentation/documentation.adoc)
 
