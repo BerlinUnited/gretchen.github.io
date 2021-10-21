@@ -1,7 +1,7 @@
 site_name: Gretchen - Documentation
 nav:
   - The Gretchen robot:
-    - '1_index.md'
+    - 'index.md'
   - Gretchen - Hardware:
     - '2_hardware_intro.md'
     - '3_wooden_parts.md'
