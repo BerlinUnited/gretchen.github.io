@@ -2,7 +2,7 @@
 
 
 <figure>
-  <img src="../img_gretchen/belt.png"/>
+  <img src="/img_gretchen/belt.png"/>
 </figure>
 
 
