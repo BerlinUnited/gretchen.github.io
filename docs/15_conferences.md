@@ -28,11 +28,11 @@ We exchanged experience with each other and discussed collaboration ideas and th
 We have also presented the Gretchen robot in a **60-minute talk** at the [Virtual RoboCup Humanoid Open Workshops (V-RoHOW)](https://humanoid.robocup.org/virtual-rohow-2020/program/), together with Heinrich Mellmann and Matthias Kubisch. **V-RoHOW** is an online workspace for the **RoboCup Humanoid community** to get together, pitch ideas and socialize. This online event was organized for the first time, due to the cancellation of RoboCup 2020. Our presentation was called **’Gretchen - a Humanoid Open Hardware Platform for Education and Research’**, where we presented the current state of the Gretchen project, some of the robot’s most interesting hardware features, the software architecture, and the Sensorimotor
 boards. In the 15-minute discussion after our talk, questions about the Sensorimotor boards were asked and discussed, namely about the board microcontroller, serial bus and its cables, and the features of the boards. The talk was recorded and published on [YouTube](https://www.youtube.com/watch?v=tsjLt30-Pxw&t=2495s).
 
-<figure>
-  <img src="../img_gretchen/vrohow.png"/>
-  <figcaption>
-</figcaption>
-</figure>
+
+<div class="rounded m-md-auto col-md-6">
+  <iframe width="950" height="534" src="https://www.youtube.com/watch?v=tsjLt30-Pxw&t=2495s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+
 
 ## Forum Junge Spitzenforscher
 
