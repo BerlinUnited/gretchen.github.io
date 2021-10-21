@@ -1,7 +1,7 @@
 # Introduction
 
 <figure>
-  <img src="../img_gretchen/hardware_process.png"/>
+  <img src="./img_gretchen/hardware_process.png"/>
   <figcaption>
     An overview of the assembly stages and of the major hardware components.
 </figcaption>
@@ -25,7 +25,7 @@ This documentation gives an overview over the current state of the hardware and 
 **The Gretchen robot** was designed and developed by Matthias Kubisch in collaboration with the AI Brain Company in 2018. One of the prototypes of the robot is currently used for academic research and education in the lab of the Adaptive Systems Group in the Computer Science department of the Humboldt University. **The Gretchen robot** is a versatile platform for education, as its modular design allows working and experimenting by its hardware design, actuators, 3D-printed components, firmware, power supply, communication bus, software libraries or the API.
 
 <figure>
-  <img src="../img_gretchen/matthias.png"/>
+  <img src="./img_gretchen/matthias.png"/>
   <figcaption>
   	Matthias Kubisch and Gretchen
 </figcaption>
@@ -35,7 +35,7 @@ This documentation gives an overview over the current state of the hardware and 
 (DoFs), 5 of which are in each leg: 2 in the hip (roll and pitch), 1 in the knee (pitch), and 2 in the ankle (roll and pitch). The robot resembles the lower part of the human body, by incorporating feet, legs and lower torso as shown in the picture below.
 
 <figure>
-  <img src="../img_gretchen/gretche_kinematics.png"/>
+  <img src="./img_gretchen/gretche_kinematics.png"/>
   <figcaption>
   	Matthias Kubisch and the Gretchen robot
 </figcaption>
@@ -60,7 +60,7 @@ at the university, public engagement and building of the RoboCup
 community.
 
 <figure>
-  <img src="../img_gretchen/rohow.jpeg"/>
+  <img src="./img_gretchen/rohow.jpeg"/>
   <figcaption>
   	The NaoTH Team at Rohow, where the Gretchen robot was introduced to the RoboCup community for the first time.
 </figcaption>
@@ -79,7 +79,7 @@ in 2016 and 2nd place in the Mixed Team Competition as part of the team
 **DoBerMan** at the RoboCup 2017.
 
 <figure>
-  <img src="../img_gretchen/gretchen_work_1024.jpg"/>
+  <img src="./img_gretchen/gretchen_work_1024.jpg"/>
   <figcaption>
   	Heinrich Mellmann and Anastasia Prisacaru working on the Gretchen robot.
 </figcaption>
