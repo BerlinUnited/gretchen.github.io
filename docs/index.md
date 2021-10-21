@@ -1,5 +1,11 @@
 # Introduction
 
+<figure>
+  <img src="../img_gretchen/hardware_process.png"/>
+  <figcaption>
+    An overview of the assembly stages and of the major hardware components.
+</figcaption>
+</figure>
 
 <figure>
   <img src="./img_gretchen/belt.png"/>
