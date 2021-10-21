@@ -30,8 +30,10 @@ boards. In the 15-minute discussion after our talk, questions about the Sensorim
 
 
 <div class="rounded m-md-auto col-md-6">
-  <iframe width="950" height="534" src="https://www.youtube.com/watch?v=tsjLt30-Pxw&t=2495s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="950" height="534" src="https://www.youtube.com/embed/tsjLt30-Pxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </div>
+
+
 
 
 ## Forum Junge Spitzenforscher
