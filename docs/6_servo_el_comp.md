@@ -1,4 +1,4 @@
-# Servos and electronic components
+# Servos and Sensorimotor Boards
 
 The Gretchen robot is powered by **10 low-cost Hitec HS-805MG Mega servo motors**, the distinguishing features of which are the **custom Sensorimotor boards**. These boards were designed by the creators of Gretchen, aiming to add more features, namely, **more torque, sensory data, bus communication and customizable firmware** to simple and low-cost servo motors, thereby drastically lowering the overall price of the robot. The servos are placed either above or below the robot’s joints and are connected to them with toothed belts.
 
@@ -16,7 +16,15 @@ For powering Gretchen the **HS-805MG Mega Giant Scale, Metal Gear analog Servo**
 
 ## Sensorimotor Boards
 
-As mentioned in the previous paragraph, the analog servo from the assembly kit has a few disadvantages and the custom boards and the electronic components from the assembly kit are a low-cost solution for overcoming them. The **Sensorimotor boards** have an **ATmega328P 16MHz microcontroller**, an **ISP connector** for programming it, two **RS485 Bus connectors**, an **I2C bus connector**, and a **temperature sensor**. The integrated circuit of the new board can handle a voltage up to **12V**, which is twice as much as on the old board, thereby doubling the torque of the motor to **5Nm**. This board can be used with other servos of similar size and features, with the maximum voltage limit of 12V. Before inserting the new board inside the servo, the old one has to be carefully removed, by desoldering the ground and the motor pins with a soldering iron and a desoldering pump. We used a 50W soldering station which can heat up to 450&deg;C. We used a 1mm thick lead-free soldering wire with 99,3% tin and 0,7% copper. The grounding pin is sinking much heat and even after setting the maximum temperature, it was still very hard to desolder it, so we lifted most of the boards together with the ground pin and the glue with which it was fixed to the motor. In this case, the process of soldering a cable to the motor was more challenging, than when the grounding pin remained on the motor. We’ll elaborate on solving this problem in the Cables and Wires Section. After removing the old board, the following components have to be soldered to the new one: a **temperature sensor** and a **capacitor** on the backside and an **I2C connector**, an **ISP 6-pin header**, and two rectangular **4-pin motorcord sockets** on the front side of the board. The new board and the mentioned electronic components can be seen in the left picture below.
+The **Sensorimotor boards** have an **ATmega328P 16MHz microcontroller**, an **ISP connector** for programming it, two **RS485 Bus connectors**, an **I2C bus connector**, and a **temperature sensor**, which can be seen on the following pinout: 
+
+<figure>
+  <img src="../img_gretchen/sensorimotor_pinout.png"/>
+  <figcaption>
+</figcaption>
+</figure>
+
+The integrated circuit of the new board can handle a voltage up to **12V**, which is twice as much as on the old board, thereby doubling the torque of the motor to **5Nm**. This board can be used with other servos of similar size and features, with the maximum voltage limit of 12V. Before inserting the new board inside the servo, the old one has to be carefully removed, by desoldering the ground and the motor pins with a soldering iron and a desoldering pump. We used a 50W soldering station which can heat up to 450&deg;C. We used a 1mm thick lead-free soldering wire with 99,3% tin and 0,7% copper. The grounding pin is sinking much heat and even after setting the maximum temperature, it was still very hard to desolder it, so we lifted most of the boards together with the ground pin and the glue with which it was fixed to the motor. In this case, the process of soldering a cable to the motor was more challenging, than when the grounding pin remained on the motor. We’ll elaborate on solving this problem in the Cables and Wires Section. After removing the old board, the following components have to be soldered to the new one: a **temperature sensor** and a **capacitor** on the backside and an **I2C connector**, an **ISP 6-pin header**, and two rectangular **4-pin motorcord sockets** on the front side of the board. The new board and the mentioned electronic components can be seen in the left picture below.
 
 <figure>
   <img src="../img_gretchen/sensorimotor.png"/>

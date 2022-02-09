@@ -1,0 +1,865 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+    
+    
+      
+        <title>Firmware - Gretchen - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#firmware" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gretchen - Documentation" class="md-header__button md-logo" aria-label="Gretchen - Documentation" data-md-component="logo">
+      
+  <img src="../img_gretchen/gretchen_standing_wb.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gretchen - Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Firmware
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gretchen - Documentation" class="md-nav__button md-logo" aria-label="Gretchen - Documentation" data-md-component="logo">
+      
+  <img src="../img_gretchen/gretchen_standing_wb.jpg" alt="logo">
+
+    </a>
+    Gretchen - Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          The Gretchen robot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="The Gretchen robot" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          The Gretchen robot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Gretchen - Hardware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Gretchen - Hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Gretchen - Hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_hardware_intro/" class="md-nav__link">
+        Hardware Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_wooden_parts/" class="md-nav__link">
+        Wooden Parts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_drive_parts/" class="md-nav__link">
+        Drive Parts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_printed_3d/" class="md-nav__link">
+        3D-printed Parts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_servo_el_comp/" class="md-nav__link">
+        Servos and Sensorimotor Boards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7_cables_wires/" class="md-nav__link">
+        Cables and Wires
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8_power_supply/" class="md-nav__link">
+        Power Supply
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Gretchen - Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Gretchen - Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Gretchen - Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9_software_intro/" class="md-nav__link">
+        Gretchen - Software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Firmware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Firmware
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atmega238p" class="md-nav__link">
+    ATmega238P
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware_1" class="md-nav__link">
+    Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-system-programming" class="md-nav__link">
+    In-System Programming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-tests" class="md-nav__link">
+    Firmware Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rs-485-bus" class="md-nav__link">
+    RS-485 Bus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulse-width-modulation" class="md-nav__link">
+    Pulse Width Modulation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_motor_control/" class="md-nav__link">
+        Motor Control
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_libsensorimotor/" class="md-nav__link">
+        Libsensorimotor - Python API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          SImulation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SImulation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          SImulation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_webots/" class="md-nav__link">
+        Webots Simulation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects and Conferences
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects and Conferences" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects and Conferences
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_current_progress/" class="md-nav__link">
+        Current Progress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_conferences/" class="md-nav__link">
+        Conferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16_projects/" class="md-nav__link">
+        University Projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17_links/" class="md-nav__link">
+        Useful Links
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atmega238p" class="md-nav__link">
+    ATmega238P
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware_1" class="md-nav__link">
+    Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-system-programming" class="md-nav__link">
+    In-System Programming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-tests" class="md-nav__link">
+    Firmware Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rs-485-bus" class="md-nav__link">
+    RS-485 Bus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulse-width-modulation" class="md-nav__link">
+    Pulse Width Modulation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="firmware">Firmware</h1>
+<p>This section describes the <strong>connection between the software and the hardware</strong> of the Gretchen robot. The embedded microcontroller on the Sensorimotor board is an important and complex hardware component, which is worth discussing in detail before moving on to the firmware installation and the communication between the boards and the computer.</p>
+<h2 id="atmega238p">ATmega238P</h2>
+<p>Each servo motor powering the Gretchen robot contains a Sensorimotor board with an <strong>embedded ATmega238P</strong>, which is a high-performance and open-source single-chip microcontroller created by Atmel and commonly used for open-source projects e.g. Arduino UNO. Its <strong>maximum operating frequency amounts 20 MHz</strong> and it operates on a <strong>voltage ranging from 3.3V to 5.5V</strong>. The ATmega238P has several important features, which are relevant to examine in the context of the software of the Gretchen robot, namely: <strong>fuses, In-System Programmable Flash, Pulse Width Modulation channels,
+Serial Communication</strong> and <strong>Serial-Peripheral-Interface</strong>. We elaborate on each of these features in the following subsections.</p>
+<p>The <strong>fuses</strong> are 3 bytes, called <strong>low, high and extended byte</strong>, which store the configuration of the ATmega238P, each bit corresponding to a setting or flag. For all fuses, a value of 1 means not set and a value of 0(zero) means set. The <strong>low byte fuse</strong> manages the clock settings and speed, as well as the delay after the startup of the microcontroller. The <strong>high fuse</strong> determines the settings of serial programming and preserving or erasing EEPROM and the bootloader size. The <strong>extended fuse</strong> ensures that the microcontroller receives enough voltage in order to work properly and it is not set by default. The default fuse settings of the low, high and extended fuses of the ATmega238P are 0x62 (B01100010), 0xD9 (B11011001) and 0xFF (B11111111) respectively.</p>
+<h2 id="firmware_1">Firmware</h2>
+<p>The <strong>firmware</strong> is the essential software program or set of instructions running on a microcontroller, which ensures communication with other devices and determines its actions. It is commonly located either in the Electrically Erasable Programmable Read-Only Memory (EEPROM) or in the Flash Memory. Both of them belong to the non-volatile type of memory, meaning that the stored data remains unchanged even after disconnecting the power supply. The main difference between EEPROM and flash memory is that flash memory is block-accessible, meaning that an entire block must be erased before writing, while EEPROM erases one byte at a time. Flash memory is therefore faster and cheaper, however it wears out faster than EEPROM due to a smaller number of write cycles. The EEPROM memory of the ATmega328P microcontroller is 1.024KB and can be rewritten up to 100,000 times, while its flash memory is 32KB and can be rewritten up to 10,000 times. Due to the fact that the firmware is commonly uploaded on the flash memory, this process is often called "flashing the firmware".</p>
+<h2 id="in-system-programming">In-System Programming</h2>
+<p><strong>In-System Programming (ISP)</strong> allows programming microcontrollers or other embedded devices, without removing them from the board. The <strong>Serial-Peripheral-Interface (SPI)</strong> provides the communication between the microcontroller and the computer and it consists of <strong>3 wires</strong>: <strong>Serial Clock (SCK)</strong>, <strong>Master In – Slave Out (MISO)</strong>, and <strong>Master Out – Slave In (MOSI)</strong>. The clock line synchronizes the communication between the computer (master) and the target system (slave), so that at each pulse of the clock line, the microcontroller receives one bit through the MOSI line and simultaneously sends one bit to the computer through the MISO line. The <strong>ISP header has 3 additional pins</strong> besides the ones of the SPI, namely: <strong>Reset</strong>, <strong>Power (5V)</strong> and <strong>Ground (GND)</strong>. The Reset line is controlled by the master and ensures that once the communication has started it’s not interrupted. For transferring the desired
+firmware to the microcontroller, we used an <a href="https://shop.myavr.com/index.php?sp=article.sp.php&amp;artID=200006">AVR-ISP MySmartUSB Light Programmer</a>, which is illustrated in the upper part of figure below. Due to the 5V and the GND pins <strong>an external power supply is not necessary</strong>, as the programmer draws enough power from the computer for supplying the microcontroller with sufficient voltage to ensure its proper functionality.</p>
+<h2 id="firmware-tests">Firmware Tests</h2>
+<p>The assembly process of the actuators involves several steps which require precision and very careful actions, in order to avoid accidental damage of the boards. For instance, the soldering process of the capacitor involved heating the board for a longer time, as the ground pin was sinking a lot of heat into the board. Moreover, the board LEDs are located very close to the capacitor pins and can be easily damaged by the soldering iron if it slips a few millimeters away. Furthermore, the 3D-printed motor lid can damage the insulation of the motor cables, if the temperature sensor is slightly shifted, potentially causing unexpected behaviors of the board or short circuits. Thus, <strong>it is essential to test the boards’ functionality before uploading the firmware and connecting it to the serial bus</strong>. The blinky test script, which can be found in the <a href="https://github.com/suprememachines/sensorimotor/tree/3a87a29950bdd637be39ed34af577aef0984a3cb">Sensorimotor repository</a>, provides the possibility to <strong>check if the board electronics are intact</strong>, if the on-board microcontroller can be connected to the computer and respond to basic requests, if its LEDs are intact and if the serial bus and ISP work. The advantage of using a test script as blinky is that no other tools are required to test if the hardware works properly. Additionally, blinky <strong>changes the default values of the fuses</strong>. The default value of the low byte fuse of the Atmega328p is changed from 0x62 to 0xCF, meaning that the clock speed will be bigger than 8MHz (instead of dividing it by 8), there will be no clock output and the chip will startup with a small delay. The high byte remains unchanged at 0xD9, meaning that serial programming is allowed, the EEPROM memory is preserved and the bootloader has a maximum size of 4KB. The extended fuse is changed to 0xFD, which signifies that the minimal voltage limit is 2,7V. We uploaded the blinky test script to the ATmega238P via the <a href="https://shop.myavr.com/index.php?sp=article.sp.php&amp;artID=200006">AVR Programmer</a>. The programmer supplies the board with 5V, which is <strong>enough for successfully transferring the code to the chip</strong>, but <strong>not enough for powering the on-board LEDs</strong>. In order to check if the test ran successfully and the LEDs were blinking, we had to plug in one RS485 connector with the battery, as shown on the bottom part of figure below. After this step, the firmware can be safely flashed on the microcontroller.</p>
+<figure>
+  <img src="../img_gretchen/firmware.png"/>
+  <figcaption>
+The communication channels between the servos with embedded Sensorimotor
+boards and the computer: On the top part - the USB to ISP Programmer is shown, which is
+used for the process of flashing the firmware. The bottom part illustrates the communication
+between the computer and the robot’s serial bus via a USB to Serial Bridge and a power
+supply attached to it.
+</figcaption>
+</figure>
+
+<h2 id="rs-485-bus">RS-485 Bus</h2>
+<p>The motors are connected with each other in a <strong>daisy-chained manner</strong> and communicate with each other and <strong>the external computer via the RS-485 serial bus</strong>. RS-485 is a data transmission standard for serial communication, which allows for robust transmission of moderate data rates over long distances. It consists of <strong>4 lines</strong>: <strong>power (VCC), ground (GND), data lines A and B</strong>. The RS485 network uses <strong>differential communication of two data lines</strong>, meaning that the <strong>voltage of the data line A is the inverse of the one on the line B</strong>. In other words, the same signal is passed through both lines, however, on one line it is inverted, thereby making the bus <strong>immune against noise</strong>. The output of the receiver is 1 if the voltage of data line A is 200mV bigger than the one of B, and 0 - otherwise. The RS-485 bus lets up to 32 devices to communicate via <strong>a single pair of wires</strong>, allowing only one device to communicate with the other ones via the bus at a
+time, with a <strong>data rate of 100Hz (10ms) per cycle</strong>. There are multiple options of connecting the external computer to the serial bus of the robot, by using a USB-to-Serial/RS485 device, such as FTDI USB-RS485-PCB, Digitus DA-70157 or In-Circuit USB-RS485-Bridge. We used the <strong>In-Circuit USB-RS485-Bridge</strong> by connecting it to the robot’s foot. As opposed to the other USB-to-Serial devices mentioned above, the USB-RS485-Bridge has only the <strong>3 IO pins</strong> which are needed to connect to the robot’s bus: <strong>RS485-A, RS485-B</strong> and <strong>Ground</strong>. We have soldered the ground cables of the USB-RS485-Bridge and of a battery, and created a USB-to-Serial connector which is illustrated on the lower part of the figure above.</p>
+<h2 id="pulse-width-modulation">Pulse Width Modulation</h2>
+<p>The actuators of the Gretchen robot are controlled by <strong>Pulse Width Modulation (PWM)</strong>, which is a commonly used control approach of <strong>powering brushed DC motors of legged robots and robotic arms</strong>. PWM is a technique of digitally encoding analog signals by chopping an electrical signal in discrete parts. The voltage and the current are controlled by <strong>turning the power on and off at a fast rate</strong>. The period of time in which the power is turned on - is called a <strong>duty cycle</strong>. For instance, if the power is on 20% and off - 80% of the time, the PWM output is at a 20% duty cycle. The advantage of the PWM is that it <strong>eliminates the need for a digital-to-analog conversion</strong>. Due to the fact that the <strong>signal remains digital</strong> all the way from the processor to the controlled system, <strong>the noise effects are minimized</strong>, as the noise has to be strong enough to change a logical 1 to 0, or the other way around. The maximally allowed PWM duty cycle is used for setting the voltage limit with which the actuators of the Gretchen robot are powered. </p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+
+<!-- Footer -->
+<footer class="md-footer">
+
+  <!-- The base theme links to previous and/or next page, we omit that here. -->
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+
+      <!-- Social links -->
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/naoteamhumboldt" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/BerlinUnited" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.youtube.com/user/teamhumboldt" target="_blank" rel="noopener" title="www.youtube.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

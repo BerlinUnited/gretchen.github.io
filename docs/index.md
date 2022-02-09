@@ -21,7 +21,7 @@ This documentation gives an overview over the current state of the hardware and 
 <figure>
   <img src="./img_gretchen/matthias.png"/>
   <figcaption>
-  	Matthias Kubisch and Gretchen
+  	Matthias Kubisch and the Gretchen robot
 </figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ This documentation gives an overview over the current state of the hardware and 
 <figure>
   <img src="./img_gretchen/gretche_kinematics.png"/>
   <figcaption>
-  	Matthias Kubisch and the Gretchen robot
+  	Kinematic structure of the Gretchen robot
 </figcaption>
 </figure>
 
